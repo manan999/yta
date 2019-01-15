@@ -1,0 +1,11 @@
+.v-item
+{
+	display : flex !important;
+	align-items: center !important;
+	cursor: pointer;
+}
+
+.v-item .image
+{
+	max-width: 18em ;
+}
