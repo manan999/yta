@@ -51,13 +51,20 @@ class App extends Component {
       return null;
   }
 
+  logic2 = () => {
+    if (this.state.selectedVideo)
+      return null ;
+    else 
+      return 'Search and select a video to continue...' ;
+  }
+
   render() {
     return (
       <div className="App ui container">
           <h1> You<span className='red'>Tube</span> Anonymous </h1>
           <Bar formSubmit={this.onBarSubmit}/>
           <h2> Search YouTube Anonymously... Free and unlimited... </h2>
-          <div> Search and select a video to continue... </div>
+          <div> {this.logic2()} </div>
           <div className="ui grid" >
             <div className="ui row" >
               <div className="eleven wide column" >
